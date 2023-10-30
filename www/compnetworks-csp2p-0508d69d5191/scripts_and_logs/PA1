@@ -1,0 +1,4 @@
+#!/bin/bash
+kill -9 `ps -ef|grep PA1.jar|grep -v grep|awk '{print $2}'` 2>/dev/null
+#nohup java -jar PA1.jar -t >> nohupPA1.out &
+nohup java -jar PA1.jar  -t >> nohupPA1.out &
